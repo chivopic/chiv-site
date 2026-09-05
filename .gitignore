@@ -1,0 +1,12 @@
+/node_modules
+/.pnp
+.pnp.*
+/coverage
+/.next/
+/out/
+/build
+.DS_Store
+*.pem
+*-debug.log*
+.env*
+*.tsbuildinfo
