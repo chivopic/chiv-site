@@ -12,9 +12,6 @@ export default function HomePage() {
     <div className="space-y-16">
       <section className="space-y-5">
         <div className="space-y-2">
-          <h1 className="text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
-            {site.name}
-          </h1>
           <p className="text-base text-muted-foreground sm:text-lg">{site.role}</p>
           <p className="font-mono text-sm text-muted-foreground/80">{site.motto}</p>
         </div>

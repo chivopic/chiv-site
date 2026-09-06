@@ -17,11 +17,19 @@ export function SiteHeader() {
           className="inline-flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
         >
           <Image
+            src="/logo-light.png"
+            alt="Chiv"
+            width={120}
+            height={32}
+            className="h-7 w-auto dark:hidden sm:h-8"
+            priority
+          />
+          <Image
             src="/logo.png"
             alt="Chiv"
             width={120}
             height={32}
-            className="h-7 w-auto sm:h-8"
+            className="hidden h-7 w-auto dark:block sm:h-8"
             priority
           />
         </Link>
