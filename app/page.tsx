@@ -11,6 +11,7 @@ export default function HomePage() {
   return (
     <div className="space-y-16">
       <section className="space-y-5">
+        <h1 className="sr-only">Chiv</h1>
         <div className="space-y-2">
           <p className="text-base text-muted-foreground sm:text-lg">{site.role}</p>
           <p className="font-mono text-sm text-muted-foreground/80">{site.motto}</p>

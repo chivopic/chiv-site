@@ -26,7 +26,8 @@ export function SiteHeader() {
           />
           <Image
             src="/logo.png"
-            alt="Chiv"
+            alt=""
+            aria-hidden={true}
             width={120}
             height={32}
             className="hidden h-7 w-auto dark:block sm:h-8"
