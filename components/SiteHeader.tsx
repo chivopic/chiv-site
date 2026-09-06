@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { site } from "@/lib/site";
 import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
@@ -14,9 +14,16 @@ export function SiteHeader() {
       <div className="mx-auto flex h-14 max-w-2xl items-center justify-between px-4 sm:px-6">
         <Link
           href="/"
-          className="text-sm font-medium tracking-tight text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
+          className="inline-flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
         >
-          {site.name}
+          <Image
+            src="/logo.png"
+            alt="Chiv"
+            width={120}
+            height={32}
+            className="h-7 w-auto sm:h-8"
+            priority
+          />
         </Link>
         <nav className="flex items-center gap-4" aria-label="Primary">
           {links.map((link) => (
